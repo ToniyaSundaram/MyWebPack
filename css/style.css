@@ -1,0 +1,17 @@
+/* A Css Style Sheet */
+
+header, footer {
+	background-color: lightgray;
+	border: solid 1px black;
+    /*font-family: 'Times New Roman', serif; */
+}
+footer {
+	border-radius: 3px;
+	padding: 10px;
+}
+body {
+	font-family: Segoe UI, Arial, sans-serif;
+	font-size: 14px;	
+	
+}
+			
