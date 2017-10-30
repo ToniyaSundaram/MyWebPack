@@ -14,4 +14,65 @@ body {
 	font-size: 14px;	
 	
 }
+#main {
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	color: #202020;
+	margin: 5px;
+}
 			
+#main label {
+	font-weight: bold;
+}
+
+#main input[type=submit]{
+	background-color: green;
+	border-radius: 15px;
+	color: white;
+	margin-top: 5px;
+	padding: 3px;
+}
+
+#results {
+	padding:2px;
+	width:600px;
+	display: inline-block;
+	vertical-align:top;
+}
+
+
+.simple-form {
+	padding:2px;
+	width: 300px;
+	display: inline-block;
+	vertical-align:top;
+	/*
+	position:absolute;
+	bottom: 5px;
+	right: 5px;
+	*/
+}
+
+.container {
+	width: 989px;
+	//text-align:center;
+	margin:0 auto;
+}
+
+
+header nav {
+	float: right;
+	margin-right: 5px;
+}
+
+
+header nav li {
+	display: inline;
+}
+
+a {
+	color: green;
+}
+
+
+
