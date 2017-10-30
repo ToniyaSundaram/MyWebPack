@@ -5,14 +5,13 @@ A Basic web app developed to create a Goal Setting Page
 -->
 <!DOCTYPE html>
 <html>
-	<head> 
-		<title> Go Perform </title>
-	<link rel= "stylesheet" href= "css/style.css" />
-	</head>
-	<body>  
+	<div class="container">
+		<head> 
+			<title> Go Perform </title>
+		<link rel= "stylesheet" href= "css/style.css" />
+		</head>
+		<body>  
 		<header>
-		<div> <img src="image/goal.jpg"/> </div>
-		<div> You can see the goals defined to you by quarters in this <a href= "https://authvchnform.cognizant.com"> page </a></div>
 		<nav>
 			<ul>
 				<li> <a href= "/Hello.html"> Home </a> </li>
@@ -20,25 +19,32 @@ A Basic web app developed to create a Goal Setting Page
 				<li> <a href= "/about.html"> About </a> </li>
 			</ul>
 		</nav>
+		<div> <center><img src="image/goal.jpg"/> </div></center>
+		<div> You can see the goals defined to you by quarters in this <a href= "https://authvchnform.cognizant.com"> page </a></div>
 		</header>
-		<section>
+		<section id="main">
 		<p> <span> You achieve a specific goal and u will be rewarded by <i> credits </i> <b> </span> The more credits you earn </b> you are better off at the end of year</p>
-		</section>
-		<form action = "http://wilder.azurewebsites.net/echo" method= "POST"> 
+			<form action = "http://wilder.azurewebsites.net/echo" method= "POST" class="simple-form"> 
 			<label for ="ValueAdd"> Value: </label>
 			<input name="ValueAdd" id= "ValueAdd"> </br>
 			<input type= "checkbox" name= "useStars"  id = "useStars" checked= "TRUE" />
 				<label for = "useStars" > Use Stars  </label> <br/>
-			Quarter: <select name= "langChoice">
+				<label for = "quarter">Quarter: </label> 
+				<select name= "langChoice" id ="langChoice">
 				<option> Q1 </option>
 				<option> Q2 </option>
 				<option selected> Q3 </option>
 				<option> Q4 </option>
 				</select></br>
-			<input type="submit" value= "Submit">
+			<input type="submit" value= "Submit" id="submit">
 		</form>
+		<div id="results" class="border-image">
+			The search results will appear here ....soon :) 
+		</div>
+		</section>
 		<footer>
 		&copy; 2017 Toniya Sundaram
 		</footer>
 	</body>
+	</div>
 </html>
